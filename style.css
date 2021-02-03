@@ -12,6 +12,7 @@ body{
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
+    
 }
 nav{
     height: 50px;
@@ -125,4 +126,28 @@ nav ul li a:hover, a.active{
 .button{
     background-color: #E33741;
    color: #F3F5FF;
+}
+.greeting{
+    display: none;
+    color: #fff;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    height: 600px;
+    width: 380px;
+    margin: auto;
+    border-radius: 20px;
+    color: #E33741;
+}
+#showBookingInfo{
+    margin-top: 40px;
+    text-align: left;
+}
+.styleGreet{
+    display: flex;
+    margin-left: 50px;
+    line-height: 20px;
+}
+.pStyle{
+    padding: 7px;
+line-height: 20px;
 }

@@ -35,7 +35,7 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <main id="mainSection" class="main-content container">
 
         <div class="booking-content">
             <h1>Cruise Queen</h1>
@@ -47,20 +47,20 @@
             <h3>Book Ocean Time</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+                <input id="flyingFrom-input" class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
             </div>
             <div class="input-group">
                 <label for="">Flying To</label>
-                <input class="inp-style" type="text" name="" placeholder="New York, United States">
+                <input id="flyingTo-input" class="inp-style" type="text" name="" placeholder="New York, United States">
             </div>
             <div class="inputs">
                 <div class="input-group">
                     <label" for="">Departure</label>
-                    <input class="inp-style" type="date" name="">
+                    <input id="departureTime" class="inp-style" type="date" name="">
                 </div>
                 <div class="input-group">
                     <label for="">Return</label>
-                    <input class="inp-style" type="date" name="">
+                    <input id="returnTime" class="inp-style" type="date" name="">
                 </div>
             </div>
             <div class="input-group f-class">
@@ -116,9 +116,44 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="bookNow" class="btn-style">Book Now</button>
         </div>
+
+
     </main>
+    <section class="container mt-5">
+
+        <div id="greeting-area"  class="greeting text-center">
+            <h1>Thank you for choosing us!</h1>
+            <h3>Your Booking:</h3>
+
+            <div id="showBookingInfo">
+
+                <div class="styleGreet">
+                    <h4>From:</h4>
+                    <p class="pStyle" id="setFlyingFrom">Dhaka, Bangladesh</p>
+                </div>
+
+                <div class="styleGreet">
+                    <h4>To:</h4>
+                    <p class="pStyle" id="setFlyingTo">New York, United States</p>
+                </div>
+
+               <div class="styleGreet">
+                    <h4>Departure:</h4>
+                    <p class="pStyle" id="setDeparture"></p>
+               </div>
+               <div class="styleGreet">
+                    <h4>Return:</h4>
+                    <p class="pStyle" id="setReturn"></p>
+                </div>
+
+                <div class="styleGreet">
+                    <h5>Room No: 1000</h5>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--Thank You-->
     <script src="script.js"></script>

@@ -31,3 +31,27 @@ function getQuantity(category){
     const quantity=parseInt(document.getElementById(category+'-input').value);
     return quantity;
 }
+
+    const bookNowBtn=document.getElementById('bookNow');
+    bookNowBtn.addEventListener('click',function(){
+     document.getElementById('mainSection').style.display='none';
+
+        const greetingArea= document.getElementById('greeting-area');
+        greetingArea.style.display='block';
+
+        const flyingFrom=document.getElementById('flyingFrom-input').value;
+        document.getElementById('setFlyingFrom').innerText=flyingFrom;
+
+        const flyingTo=document.getElementById('flyingTo-input').value;
+        document.getElementById('setFlyingTo').innerText=flyingTo;
+
+        const departureTime=document.getElementById('departureTime').value;
+        document.getElementById('setDeparture').innerText=departureTime;
+
+        const returnDate=document.getElementById('returnTime').value;
+        document.getElementById('setReturn').innerText=returnDate;
+
+
+       
+
+    });
