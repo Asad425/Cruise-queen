@@ -39,19 +39,14 @@ function getQuantity(category){
         const greetingArea= document.getElementById('greeting-area');
         greetingArea.style.display='block';
 
-        const flyingFrom=document.getElementById('flyingFrom-input').value;
-        document.getElementById('setFlyingFrom').innerText=flyingFrom;
-
-        const flyingTo=document.getElementById('flyingTo-input').value;
-        document.getElementById('setFlyingTo').innerText=flyingTo;
-
-        const departureTime=document.getElementById('departureTime').value;
-        document.getElementById('setDeparture').innerText=departureTime;
-
-        const returnDate=document.getElementById('returnTime').value;
-        document.getElementById('setReturn').innerText=returnDate;
-
-
-       
+        setText('flyingFrom-input','setFlyingFrom');
+        setText('flyingTo-input','setFlyingTo');
+        setText('departureTime','setDeparture');
+        setText('returnTime','setReturn')
 
     });
+
+    function setText(id1,id2){
+        const getInfo=document.getElementById(id1).value;
+        document.getElementById(id2).innerText=getInfo;
+    }
